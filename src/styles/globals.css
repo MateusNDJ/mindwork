@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* MindWork Color System */
+    --bg-primary: #0E0E10;
+    --bg-secondary: #1A1A1D;
+    --bg-card: #232326;
+    --text-primary: #F2F2F2;
+    --text-secondary: #A0A0A5;
+    --accent-blue: #3B82F6;
+    --accent-blue-hover: #60A5FA;
+    --success: #22C55E;
+    --error: #EF4444;
+    --border: #2C2C2F;
+
+    /* Spacing */
+    --spacing-sm: 16px;
+    --spacing-md: 24px;
+    --spacing-lg: 32px;
+    --radius: 12px;
+  }
+
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfecg.woff2) format('woff2');
+  }
+
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2) format('woff2');
+  }
+
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2) format('woff2');
+  }
+
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2) format('woff2');
+  }
+
+  * {
+    font-family: 'Poppins', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    background: var(--bg-primary);
+    color: var(--text-primary);
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--text-primary);
+  }
+
+  h2 {
+    font-weight: 600;
+    font-size: 28px;
+    color: var(--text-primary);
+  }
+
+  h3 {
+    font-weight: 500;
+    font-size: 22px;
+    color: var(--text-secondary);
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--text-secondary);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+/* Smooth transitions */
+* {
+  transition: background-color 200ms ease-out, border-color 200ms ease-out, color 200ms ease-out;
+}
